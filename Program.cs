@@ -25,7 +25,7 @@ public class Program {
         }
         Console.WriteLine("-------------------------");
         for(int j =0; j<cantidadEstudiantes;j++){
-            Console.WriteLine(nombres[j] + " - " + arryCalificacion[j]);
+            Console.WriteLine(nombres[j] + " - " + arrayCalificacion[j]);
         }
         for(int i =0; i<cantidadEstudiantes;i++){    
             suma = suma +arrayCalificacion [i];
@@ -34,12 +34,12 @@ public class Program {
             }
         }
         reprobados = arrayCalificacion .Length - aprobados;
-        promedioGeneral = (double)suma / arryCalificacion.Length;
+        promedioGeneral = (double)suma / arrayCalificacion.Length;
 
         Console.WriteLine("-------------------------");
         Console.WriteLine("Promedio general: " + promedioGeneral);
-        Console.WriteLine("Aprobados: " + aprovados);
-        Console.WriteLine("Reprobados: " + reprovados);
+        Console.WriteLine("Aprobados: " + aprobados);
+        Console.WriteLine("Reprobados: " + reprobados);
 
     }
 }
